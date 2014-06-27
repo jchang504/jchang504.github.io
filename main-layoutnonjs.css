@@ -1,0 +1,113 @@
+/* Style hyperlinks */
+
+a[href] {
+  text-decoration: none;
+  color: gold;
+  text-shadow: none;
+}
+
+a[href]:hover {
+  text-shadow: 0 0 5px #ffef99;
+}
+
+/* Style text and body */
+
+body {
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100%;
+  font-family: "Everson Mono", monospace;
+  color: white;
+  background-color: black;
+  text-shadow: 0 0 1px;
+}
+
+.centered {
+  text-align: center;
+}
+
+ul li {
+  margin: 5px;
+}
+
+#quote {
+  margin-top: 0;
+}
+
+/* Style navbar */
+
+#navbar {
+  position: fixed;
+  width: 400px;
+  height: 100px;
+  top: 0;
+  margin-left: 423px;
+  text-align: right;
+  border: 1px solid white;
+  border-top: none;
+  background-color: black;
+  padding-right: 25px;
+}
+
+#navbar-title {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#navbar-title:hover {
+  text-shadow: none; /* override general link:hover glow effect */
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  font-size: 1.25em;
+  display: inline;
+}
+
+#navbar ul li:hover {
+  color: #fff7cc;
+  text-shadow: 0 0 5px;
+}
+
+/* Style the rest */
+
+#cover-photo {
+  width: 100%;
+}
+
+.section:before {
+  display: block;
+  content: "";
+  margin-top: -100px;
+  height: 100px;
+}
+
+.section h2 { /* So that the navbar is flush with the section header when you click the section links */
+  margin-top: 0;
+  border: 1px solid;
+  padding-left: 5px;
+}
+
+/* Style Contact section */
+
+#me {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#right-column {
+  width: 630px;
+  float: right;
+}
+
+#footer {
+  clear: both;
+}
