@@ -3,27 +3,46 @@ body {
   margin: 0;
 }
 
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+/* Remove default link decoration for header and menu */
+
+h1 a, .link {
+  color: black;
+  cursor: pointer;
+}
+
+/* "No JS?" message */
 h4 {
   text-align: center;
 }
+
+/* Header - name */
 
 h1 {
   text-align: center;
   font-size: 3.5em;
   font-weight: 300;
   margin: 0;
+
 }
+
+/* Glorious sliding picture window */
 
 #picwindow {
   height: 350px;
   width: 350px;
   margin: 1em auto;
-  border: none;
   border-radius: 50%;
   background-image: url("img/home-pics-white.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+/* Navigation menu */
 
 #menu {
   text-align: center;
@@ -35,11 +54,11 @@ h1 {
   margin: 0 50px;
 }
 
-#projects {
+#nav-projects {
   width: 120px;
 }
 
-#more {
+#nav-more {
   width: 80px;
 }
 
@@ -47,18 +66,35 @@ h1 {
   font-size: 2em;
 }
 
+.link {
+  cursor: pointer;
+  color: black;
+}
+
 .options-list {
   display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px dotted black;
+  border-top: none;
   text-align: left;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0.5em;
+  padding-bottom: 0.25em;
 }
 
 .options-list li {
   white-space: nowrap;
 }
 
-.option:hover {
+.option:hover, .menu-link:hover {
   color: cornflowerblue;
+}
+
+/* Content sections */
+
+section {
+  display: none;
+  margin: 0 1em;
 }
