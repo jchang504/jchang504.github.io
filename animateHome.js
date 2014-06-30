@@ -7,38 +7,40 @@ $(document).ready(function() {
     if (pictureWindowUp) {
       switch($(this).attr('id')) {
         case 'about-link':
-          $('#picwindow').animate({backgroundPosition:'-350px'}, 100);
+          $('#picwindow').stop(true).animate({backgroundPosition:'-350px'}, 100);
           break;
         case 'nav-projects':
-          $('#picwindow').animate({backgroundPosition:'-700px'}, 100);
+          $('#picwindow').stop(true).animate({backgroundPosition:'-700px'}, 100);
           break;
         case 'nav-more':
-          $('#picwindow').animate({backgroundPosition:'-1050px'}, 100);
+          $('#picwindow').stop(true).animate({backgroundPosition:'-1050px'}, 100);
           break;
         case 'contact-link':
-          $('#picwindow').animate({backgroundPosition:'-1400px'}, 100);
+          $('#picwindow').stop(true).animate({backgroundPosition:'-1400px'}, 100);
           break;
       }
     }
   });
   // Option menus for Projects and More
   $('.with-options').hover(function() {
-    $(this).children('.options-list').slideDown('fast');
+    $(this).children('.options-list').stop().slideDown('fast');
   }, function() {
-    $(this).children('.options-list').slideUp('fast');
+    $(this).children('.options-list').stop().slideUp('fast');
   });
   // Navigation for sections
   currentSectionId = "";
   $('.menu-link').click(function() {
     clickedSectionId = '#' + $(this).attr('id').replace('link', 'section');
     if (clickedSectionId !== currentSectionId) { 
-      // don't slide for initial section choice; it looks weird
+      // In order to avoid "squishing" the circular #picwindow div, which looks
+      // bad, we instead slideUp its containing div (like a shade, hence name)
       if (pictureWindowUp) {
-        $('#picwindow').hide();
+        $('#picwindowshade').slideUp('fast');
         pictureWindowUp = false;
-        $(clickedSectionId).show();
+        $(clickedSectionId).slideDown('fast');
+        currentSectionId = clickedSectionId;
       }
-      else { // after that, slideUp/Down combination gives nice layer effect
+      else { // slideUp/Down combination gives nice layer effect
         $('section').slideUp('fast');
         $(clickedSectionId).slideDown('fast');
         currentSectionId = clickedSectionId;

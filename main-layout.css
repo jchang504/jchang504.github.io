@@ -35,11 +35,15 @@ h1 {
 #picwindow {
   height: 350px;
   width: 350px;
-  margin: 1em auto;
+  margin: 0 auto;
   border-radius: 50%;
   background-image: url("img/home-pics-white.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+#picwindowshade {
+  margin: 1em auto;
 }
 
 /* Navigation menu */
