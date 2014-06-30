@@ -27,6 +27,7 @@ h1 {
   font-size: 3.5em;
   font-weight: 300;
   margin: 0;
+  margin-bottom: 0.2em;
 
 }
 
@@ -42,14 +43,11 @@ h1 {
   background-position: 0 0;
 }
 
-#picwindowshade {
-  margin: 1em auto;
-}
-
 /* Navigation menu */
 
 #menu {
   text-align: center;
+  margin-top: 0.5em;
 }
 
 .menu-item {
