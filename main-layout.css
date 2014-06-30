@@ -3,17 +3,33 @@ body {
   margin: 0;
 }
 
+/* LINKS */
+
+/* Default, in text links style */
 a {
   color: cornflowerblue;
   text-decoration: none;
 }
 
-/* Remove default link decoration for header and menu */
-
-h1 a, .link {
+/* Title header and menu links */
+h1 a, .menu-link, .option {
   color: black;
+}
+
+.menu-link:hover, .option:hover {
+  color: cornflowerblue;
+}
+
+.menu-link {
+  font-size: 2em;
+}
+
+/* For JavaScript links (no href attribute) */
+.jslink {
   cursor: pointer;
 }
+
+/* CONTENT ELEMENTS */
 
 /* "No JS?" message */
 h4 {
@@ -64,15 +80,6 @@ h1 {
   width: 80px;
 }
 
-.menu-link {
-  font-size: 2em;
-}
-
-.link {
-  cursor: pointer;
-  color: black;
-}
-
 .options-list {
   display: none;
   position: absolute;
@@ -90,13 +97,9 @@ h1 {
   white-space: nowrap;
 }
 
-.option:hover, .menu-link:hover {
-  color: cornflowerblue;
-}
-
 /* Content sections */
 
 section {
   display: none;
-  margin: 0 1em;
+  margin: 0 2em;
 }

@@ -29,7 +29,7 @@ $(document).ready(function() {
   });
   // Navigation for sections
   currentSectionId = "";
-  $('.menu-link').click(function() {
+  $('.menu-link, .in-section-menu-link').click(function() {
     clickedSectionId = '#' + $(this).attr('id').replace('link', 'section');
     if (clickedSectionId !== currentSectionId) { 
       // In order to avoid "squishing" the circular #picwindow div, which looks
