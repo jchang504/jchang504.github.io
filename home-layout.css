@@ -1,0 +1,111 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+/* LINKS */
+
+/* Default, in text links style */
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+/* Title header and menu links */
+h1 a, .menu-link, .menu-sublink, #resume-menu-link {
+  color: black;
+}
+
+.menu-link:hover, .menu-sublink:hover, #resume-menu-link:hover {
+  color: cornflowerblue;
+}
+
+.menu-link {
+  font-size: 2em;
+}
+
+/* For JavaScript links (no href attribute) */
+.jslink {
+  cursor: pointer;
+}
+
+/* CONTENT ELEMENTS */
+
+/* "No JS?" message */
+h4 {
+  text-align: center;
+}
+
+/* Header - name */
+
+h1 {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 0.2em;
+
+}
+
+/* Glorious sliding picture window */
+
+#picwindow {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url("img/home-pics-white.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* Navigation menu */
+
+#menu {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.menu-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 50px;
+}
+
+#nav-projects {
+  width: 120px;
+}
+
+#nav-more {
+  width: 80px;
+}
+
+.options-list {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px dotted black;
+  border-top: none;
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0.5em;
+  padding-bottom: 0.25em;
+}
+
+.options-list li {
+  white-space: nowrap;
+}
+
+/* Content sections */
+
+section {
+  display: none;
+  margin: 0 2em;
+}
+
+#scrabbleboard {
+  height: 300px;
+  margin-left: 1em;
+  float: right;
+}

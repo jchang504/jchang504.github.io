@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Jemmin Chang</title>
     <link rel="icon" href="img/favicon.png"/>
-    <link type="text/css" rel="stylesheet" href="main-layout.css"/>
+    <link type="text/css" rel="stylesheet" href="home-layout.css"/>
     <!-- Get jQuery from Google -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- My script -->
@@ -23,20 +23,19 @@
    --><div id="nav-projects" class="menu-item with-options">
         <a id="projects-link" class="jslink menu-link">Projects</a>
         <ul class="options-list">
-          <li><a class="jslink option projects-sublink">Mabimart</a></li>
-          <li><a class="jslink option projects-sublink">98-252</a></li>
-          <li><a class="jslink option projects-sublink">Victor</a></li>
-          <li><a class="jslink option projects-sublink">Letterpress Victory</a></li>
-          <li><a class="jslink option projects-sublink">Future</a></li>
+          <li><a id="projects-mabimart" class="jslink menu-sublink">Mabimart</a></li>
+          <li><a id="projects-victor" class="jslink menu-sublink">Victor</a></li>
+          <li><a id="projects-letterpress-victory" class="jslink menu-sublink">Letterpress Victory</a></li>
+          <li><a id="projects-future" class="jslink menu-sublink">Future Projects</a></li>
         </ul>
       </div><!-- remove inline space
     --><div id="nav-more" class="menu-item with-options">
         <a id="more-link" class="jslink menu-link">More</a>
         <ul class="options-list">
-          <li><a class="jslink option more-sublink">SCRABBLE</a></li>
-          <li><a class="jslink option more-sublink">Music</a></li>
-          <li><a class="jslink option more-sublink">Code Philosophy</a></li>
-          <li><a class="jslink option more-sublink">R&eacute;sum&eacute;</a></li>
+          <li><a id="more-scrabble" class="jslink menu-sublink">Scrabble</a></li>
+          <li><a id="more-music" class="jslink menu-sublink">Music</a></li>
+          <li><a id="more-code-philosophy" class="jslink menu-sublink">Code Philosophy</a></li>
+          <li><a id="resume-menu-link" href="resume.pdf">R&eacute;sum&eacute;</a></li>
         </ul>
       </div><!-- remove inline space
    --><a id="contact-link" class="jslink menu-item menu-link">Contact</a>
@@ -45,12 +44,12 @@
       <h2>About Me</h2>
       <article>
       <p>Hello, world!</p>
-      <p>My name's Jemmin (<a href="http://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a>: d&#658;&epsilon;m&#618;n). I hail from Somers, NY (<a href="http://en.wikipedia.org/wiki/Somers,_NY" target="_blank">home of the American circus</a>!), and I'm a student at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. I'm studying computer science and linguistics, expecting to graduate in May 2017.</p>
-      <p>My academic interests include programming of all sorts, theoretical computer science, artificial intelligence, and linguistics (especially phonetics, acoustics, and syntactic theory). Some of my work in these areas can be seen on the <a id="projects-link" class="jslink in-section-menu-link">Projects</a> tab.</p>
+      <p>My name's Jemmin (<a href="http://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a>: d&#658;&epsilon;m&#618;n). I hail from Somers, NY (<a href="http://en.wikipedia.org/wiki/Somers,_NY" target="_blank">home of the American circus</a>!), where I graduated from <a href="http://www.somersschools.org/somershs" target="_blank">Somers High School</a> in 2013, and I'm currently a student at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. I'm studying computer science and linguistics, expecting to graduate in May 2017.</p>
+      <p>My academic interests include programming of all sorts, theoretical computer science, artificial intelligence, and linguistics (especially phonetics, acoustics, and syntactic theory). Some of my work in these areas can be seen on the <a id="projects-link" class="jslink in-section-menu-link">Projects</a> tab, or you can download my <a href="resume.pdf">R&eacute;sum&eacute;</a>.</p>
       <p>I'm also an avid classical musician. I enjoy playing viola and violin in symphony orchestras, chamber groups, and pit orchestras, and I love going to concerts and the opera. Besides music, I spend my free time playing tennis and ping pong, hiking, playing <a href="http://www.cross-tables.com/results.php?p=19459" target="_blank">competitive Scrabble</a>, and making ice cream. If you share any of these interests and would like to see (or play) a concert together, challenge me to a game of sport, or make a delicious batch of strawberry oreo mint ice cream, please <a id="contact-link" class="jslink in-section-menu-link">get in touch</a>!</p>
       <p>For more information about my musical and Scrabbular activities, see the sections in <a id="more-link" class="jslink in-section-menu-link">More</a>.</p>
       <h3>About this website</h3>
-      <p>This website is built from scratch in HTML/CSS with <a href="http://jquery.com/" target="_blank">JQuery</a> animations, edited with <a href="http://www.vim.org/" target="_blank">Vim</a>, and graciously hosted by the <a href="http://www.club.cc.cmu.edu/" target="_blank">#!/cmu/cc</a>. Last updated: 06/29/14.</p>
+      <p>This website is built from scratch in HTML/CSS with <a href="http://jquery.com/" target="_blank">JQuery</a> animations, edited with <a href="http://www.vim.org/" target="_blank">Vim</a>, and graciously hosted by the <a href="http://www.club.cc.cmu.edu/" target="_blank">#!/cmu/cc</a>. Last updated on 06/29/14.</p>
       </article>
     </section>
     <section id="projects-section">
@@ -63,15 +62,30 @@
     <section id="more-section">
       <h2>Other Stuff</h2>
       <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec lectus lectus. Phasellus tristique porttitor lorem, et consequat elit ultricies a. Aenean aliquet, justo eget lobortis rutrum, metus dui mollis magna, at accumsan tortor nulla ut risus. Nullam tempus quis velit ac cursus. Ut posuere lobortis elit a vehicula. Morbi eget luctus urna, sit amet tincidunt justo. Fusce hendrerit diam id placerat luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vel cursus nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam accumsan urna at velit ullamcorper scelerisque. Nunc id tellus at eros cursus dapibus. Aliquam dapibus adipiscing tellus, eu dictum felis gravida id. Nullam venenatis est rhoncus neque sodales pulvinar. Vivamus est diam, sagittis vel eleifend id, cursus at felis.</p>
-        <p>Ut facilisis pharetra nisl a tincidunt. Donec leo neque, pulvinar id commodo vitae, vestibulum a orci. Nam congue tristique adipiscing. Donec sit amet blandit libero. Praesent arcu mauris, dictum in varius consequat, volutpat nec magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sem erat, placerat sit amet ullamcorper a, tincidunt in est. Donec porta, nunc a dignissim consectetur, ipsum diam luctus justo, quis dictum nisi elit in metus. Pellentesque mi lectus, porta non porttitor in, varius vel justo. Praesent hendrerit, mi eu consectetur venenatis, tortor eros pharetra purus, sit amet aliquam dui mi et justo.</p>
+        <div id="scrabble-subsection">
+          <img id="scrabbleboard" src="img/scrabbleboard.jpg" alt="Scrabble Board" title="One of my nicest bingos"/>
+          <h3>Scrabble</h3>
+          <p>Looking for the <a href="/98-252/">98-252 course page</a>?</p> 
+          <p>I started playing Scrabble through the <a href="http://www.hasbro.com/scrabble/en_US/school.cfm" target="_blank">School Scrabble</a> program when I was 12 years old. I attended the National School Scrabble Championships in 2008 and 2009, partnering with Danilo Vicioso and Bryan Poellot and finishing 26<sup>th</sup> and <a href="http://www.scrabble-assoc.com/tourneys/2009/nssc/build/player/1/087.html" target="_blank">18<sup>th</sup></a>, respectively. After graduating from 8th grade and becoming too old to play School Scrabble, my Scrabble activity decreased due to the much harder competition in adult tournaments and my getting more involved with music and other activities. Recently, upon starting college at Carnegie Mellon, I've started playing more Scrabble again, and I attend a few tournaments as well as help direct the newly-forming <a href="http://www.facebook.com/groups/CMUScrabble/" target="_blank">Scrabble Club</a> at CMU.</p>
+          <p>In Fall 2014, I am teaching a <a href="http://www.cmu.edu/stuco/index.html" target="_blank">StuCo</a> class called "Wordplay: Fundamentals of Scrabble Strategy." The course number is <a href="/98-252/" target="_blank">98-252</a>.</p>
+        </div>
+        <h3 id="music-subsection">Music</h3>
+        <p>My love for and involvement in classical music has developed steadily over the years. I began playing viola in the 3<sup>rd</sup> grade with my intermediate school orchestra, and started taking private lessons with Elizabeth Kaplan in high school. Somewhere along the way I picked up a violin, and found that I enjoyed playing that as well.</p>
+        <p>I continue to practice and study viola at CMU, and I've played viola and violin in the <a href="http://alluniversityorchestra.org/" target="_blank">All-University Orchestra</a> and String Theory. My favorite, though, is to perform in small chamber ensembles and quartets - so if you're interested in playing something together, please <a id="contact-link" class="jslink in-section-menu-link">let me know</a>!</p>
+        <p>My favorite period of music is the transition between the Classical and Romantic periods, and (some of) my favorite composers are Beethoven, Mendelssohn, Schubert, Tchaikovsky, and Chopin.</p>
+        <h3 id="code-philosophy-subsection">Code Philosophy</h3>
+        <p>I hate hacking. This may sound strange coming from an avid programmer, but it's true. For me, the beauty of programming lies in its logical structure and semantic organization. I strive always for the most elegant, cleanest, fastest solution - the right way and the best way to solve the problem at hand. This isn't always easy to find; it requires careful research, lots of reading through thick documentation, and being willing to frequently refactor large chunks of code. But it leaves me with a sense of understanding and satisfaction that copy-pasting an answer from Stack Overflow just can't provide.</p>
+        <p>I also believe firmly in clear, easy-to-read, and thorough documentation. This applies to every piece of code I write, from comments in my personal .bashrc to docstrings in a python script to Git commit messages. When I first started programming, I was one of those kids who thought comments were a waste of time. I quickly grew up from that, and I take pride in devoting time and thought to writing well-documented, easy-to-maintain code.</p>
+        <p>Though I'm averse to hacky code, I'm certainly not opposed to hackathons. The excitement of charging forward with a brand-new idea and coding for hours and hours without sleep is great, even if the time constraints don't allow for the perfectly methodical programming I prefer. I've participated in HackCMU and TartanHacks at CMU, and I look forward to doing more.</p>
       </article>
     </section>
     <section id="contact-section">
       <h2>How to get in touch</h2>
       <article>
-        <p>Vivamus porta orci at leo ornare, non pharetra tellus eleifend. Morbi dapibus, velit id sollicitudin dictum, augue quam fringilla libero, aliquam dictum nunc metus et felis. Nullam eleifend accumsan odio nec dapibus. Cras velit odio, blandit vel pretium egestas, vulputate non metus. Suspendisse imperdiet convallis felis. In aliquet risus lectus, sit amet sagittis purus egestas at. Vivamus eget posuere quam. Mauris eu dolor est. Nam augue enim, rutrum eu tempus nec, consequat in arcu. Phasellus ornare quis metus sit amet feugiat. Fusce bibendum malesuada augue ac sagittis. Quisque fermentum mattis erat eu hendrerit. Phasellus congue, quam sed luctus dapibus, mauris metus malesuada ligula, non posuere libero erat vel ante. Sed ut congue velit, vel mattis nunc. Quisque fermentum lacus neque, non auctor orci fermentum nec. Etiam et augue justo.</p>
-        <p>Nullam venenatis risus justo, ac condimentum est semper sit amet. Mauris lacus nisl, facilisis eget nunc eu, ullamcorper venenatis ipsum. Etiam vulputate ligula laoreet auctor pretium. Curabitur vel felis mattis enim accumsan dapibus. Donec eu massa auctor, varius mauris id, sagittis nisi. Fusce facilisis sed lacus vitae malesuada. Phasellus mollis dignissim augue vel luctus. Nullam nulla felis, tincidunt a tellus vel, blandit molestie odio. Proin ante arcu, rhoncus in tincidunt viverra, congue nec diam. Mauris non nisi vel mauris accumsan rutrum a et ipsum. Praesent hendrerit malesuada suscipit. Integer non eleifend tortor, vel commodo elit. Vestibulum ut erat odio.</p>
+        <p>I'm available for personal and professional inquiries, comments, and coversation of all sorts, so feel free to reach out. If you have a professional inquiry, you may want to check out my <a href="resume.pdf">R&eacute;sum&eacute;</a> first.</p>
+        <p>I respond to email very quickly, so it's the best way to reach me. My email address is simply my first and last names, followed by at cmu dot e dee you (pronounce it; it's for the robots). If you need to send something by snail mail, my postal address is on my <a href="resume.pdf">R&eacute;sum&eacute;</a>.</p>
+        <p>I can also be found on <a href="https://plus.google.com/+JemminChang" target="_blank">Google+</a>, <a href="http://www.facebook.com/jemmin.chang" target="_blank">Facebook</a>, and <a href="http://www.linkedin.com/pub/jemmin-chang/8a/394/805" target="_blank">LinkedIn</a>.</p>
+        <p>If you're more about code than social media, check me out on <a href="http://github.com/jchang504" target="_blank">GitHub</a> (though I don't have many public projects; you're better off checking out my <a id="projects-link" class="jslink in-section-menu-link">Projects</a> tab) or ask for my friend key on <a href="http://www.projecteuler.net" target="_blank">Project Euler</a>.</p>
       </article>
     </section>
   </body>
