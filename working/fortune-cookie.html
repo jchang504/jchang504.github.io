@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fortune Cookie | Jemmin Chang</title>
+    <link rel="icon" href="img/icon.png"/>
+    <link type="text/css" rel="stylesheet" href="fortune-style.css"/>
+  </head>
+  <body>
+    <div id="fortune-background" onclick="changeFortune()">
+    <!-- Here we use inline styling for the display properties, otherwise
+    Javascript doesn't work reliably to change them. -->
+      <div id="fortune-message" style="display: table-cell">
+        Click to see your fortune!
+      </div>
+      <div id="fortune-numbers" style="display: none">
+      </div>
+      <div id="flip" onclick="flip()" style="display: none">
+        Flip over
+      </div>
+    </div>
+    <script src="fortuneScript.js"></script>
+  </body>
+ </html>

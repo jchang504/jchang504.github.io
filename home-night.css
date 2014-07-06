@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: greenyellow;
+}
+
+h1 a, .menu-link, .menu-sublink, #resume-menu-link {
+  color: white;
+}
+
+.menu-link:hover, .menu-sublink:hover, #resume-menu-link:hover {
+  color: greenyellow;
+}
+
+#picwindow {
+  background-image: url("img/home-pics-night.jpg");
+}
+
+.options-list {
+  background-color: black;
+  border: 1px dotted white;
+}
+
+h6 {
+  background-color: black;
+}
