@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Get font Open Sans from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Jemmin Chang</title>
+    <link rel="icon" href="img/favicon.png"/>
+    <link id="lighting" type="text/css" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="home-layout.css"/>
+    <!-- Get jQuery from Google -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- My script -->
+    <script src="animateHome.js"></script>
+  </head>
+  <body>
+    <h4 id="nojs">You need to have JavaScript enabled in your browser in order to view this website properly. Click <a href="http://www.enable-javascript.com/" target="_blank">here</a> for help enabling JavaScript.</h4>
+    <img id="light-switch" class="jslink" src="img/lightbulb-on.png" alt="Switches between day/night mode" title="Click to switch to night mode"/>
+    <h1><a href="">Jemmin Chang</a></h1>
+    <div id="picwindowshade"> <!-- Unfortunately, a necessary hack -->
+      <div id="picwindow"></div>
+    </div>
+    <nav id="menu">
+      <a id="about-link" class="jslink menu-item menu-link">About</a><!-- remove inline space
+   --><div id="nav-projects" class="menu-item with-options">
+        <a id="projects-link" class="jslink menu-link">Projects</a>
+        <ul class="options-list">
+          <li><a id="projects-mabimart" class="jslink menu-sublink">Mabimart</a></li>
+          <li><a id="projects-victor" class="jslink menu-sublink">Victor</a></li>
+          <li><a id="projects-letterpress-victory" class="jslink menu-sublink">Letterpress Victory</a></li>
+          <li><a id="projects-future" class="jslink menu-sublink">Future Projects</a></li>
+        </ul>
+      </div><!-- remove inline space
+    --><div id="nav-more" class="menu-item with-options">
+        <a id="more-link" class="jslink menu-link">More</a>
+        <ul class="options-list">
+          <li><a id="more-scrabble" class="jslink menu-sublink">Scrabble</a></li>
+          <li><a id="more-music" class="jslink menu-sublink">Music</a></li>
+          <li><a id="more-code-philosophy" class="jslink menu-sublink">Code Philosophy</a></li>
+          <li><a id="resume-menu-link" href="resume.pdf">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div><!-- remove inline space
+   --><a id="contact-link" class="jslink menu-item menu-link">Contact</a>
+    </nav>
+    <section id="about-section">
+      <h2>About Me</h2>
+      <img id="me" src="img/me.jpg" alt="me"/>
+      <article>
+      <p>Hello, world!</p>
+      <p>My name's Jemmin (<a href="http://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a>: d&#658;&epsilon;m&#618;n). I hail from Somers, NY (<a href="http://en.wikipedia.org/wiki/Somers,_NY" target="_blank">home of the American circus</a>!), where I graduated from <a href="http://www.somersschools.org/somershs" target="_blank">Somers High School</a> in 2013, and I'm currently a student at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. I'm studying computer science and linguistics, expecting to graduate in May 2017.</p>
+      <p>My academic interests include programming of all sorts, theoretical computer science, artificial intelligence, and linguistics (especially phonetics, acoustics, and syntactic theory). Some of my work in these areas can be seen on the <a id="projects-link" class="jslink in-section-menu-link">Projects</a> tab, or you can download my <a href="resume.pdf">R&eacute;sum&eacute;</a>.</p>
+      <p>I'm also an avid classical musician. I enjoy playing viola and violin in symphony orchestras, chamber groups, and pit orchestras, and I love going to concerts and the opera. Besides music, I spend my free time playing tennis and ping pong, hiking, playing <a href="http://www.cross-tables.com/results.php?p=19459" target="_blank">competitive Scrabble</a>, and making ice cream. If you share any of these interests and would like to see (or play) a concert together, challenge me to a game of sport, or make a delicious batch of strawberry oreo mint ice cream, please <a id="contact-link" class="jslink in-section-menu-link">get in touch</a>!</p>
+      <p>For more information about my musical and Scrabbular activities, see the sections in <a id="more-link" class="jslink in-section-menu-link">More</a>.</p>
+      <h3>About this website</h3>
+      <p>This website is built from scratch in HTML/CSS with <a href="http://jquery.com/" target="_blank">JQuery</a> animations, edited with <a href="http://www.vim.org/" target="_blank">Vim</a>, and graciously hosted by the <a href="http://www.club.cc.cmu.edu/" target="_blank">#!/cmu/cc</a>. Last updated on 07/04/14.</p>
+      </article>
+    </section>
+    <section id="projects-section">
+      <h2>My Projects</h2>
+      <article>
+        <img id="sheep" src="img/sheep.png" alt="MabiMart sheep"/>
+        <h3 id="mabimart-subsection" class="has-role">MabiMart — <a href="http://www.mabimart.com/" target="_blank">www.mabimart.com</a></h3>
+        <span class="role">Role: Data Acquisition Specialist</span>
+        <p>MabiMart is an online auction site for trading items from the MMORPG <a href="http://mabinogi.nexon.net/" target="_blank">Mabinogi</a>, built in the summer of 2014.</p>
+        <p>My role was very small compared to that of the site's owner and lead developer, my friend and classmate <a href="https://github.com/kleric" target="_blank">Clark Chen</a>. I helped Clark build the site's database by writing a webscraper to acquire and organize data on all of the game's items, enchants, reforges, etc., and prepare these data for database seeding. This turned out to be both more interesting and challenging than I had expected, and I learned a lot about webscraping in the process. The script was written in Python, and I learned and made use of the <a href="http://docs.python-requests.org/en/latest/" target="_blank">Requests</a>, <a href="http://lxml.de/" target="_blank">lxml</a>, and <a href="https://pythonhosted.org/cssselect/" target="_blank">CSSSelect</a> libraries.</p>
+        <h3 id="victor-subsection" class="has-role">Victor</h3>
+        <span class="role">Role: Research Assistant</span>
+        <p>Victor is a <a href="https://www.google.com/#q=victor+scrabble+cmu" target="_blank">Scrabble-playing robot</a> built at Carnegie Mellon and residing on the 3rd floor of the Gates Center for Computer Science, created primarily for the purpose of studying human-robot interaction. But <strike>it's</strike> he's also fun to play with!</p>
+        <p>I worked during the Fall 2013 semester with <a href="http://www.cs.cmu.edu/~reids/" target="_blank">Dr. Reid Simmons</a>, the CMU professor who leads the project, on improving Victor's Scrabble AI. I employed my prior knowledge and experience as a competitive Scrabble player, as well as extensive research on Scrabble algorithms and AI strategies, to design, implement, and test several new strategy paradigms for Victor, and collect statistics on their relative performance. The goal was to design several levels of strategic complexity for Victor, so that he could automatically adjust his skill level to match his opponents', making him more fun and interesting to play against.</p>
+        <h3 id="letterpress-victory-subsection" class="has-role">Letterpress Victory</h3>
+        <span class="role">Role: Project Developer</span>
+        <p>Letterpress Victory was my high school senior <a href="http://somerswise.weebly.com/" target="_blank">W.I.S.E.</a> project. I built a Java application with an interactive GUI that allows the user to enter <a href="http://itunes.apple.com/us/app/letterpress-word-game/id526619424" target="_blank">Letterpress</a> games and moves, and calculates the best moves to make. As part of the project, I tested my AI against similar apps, and found that it well outperformed them (see the video for the statistics).</p>
+        <p>My knowledge of AI was much smaller at this time, and the implementation is quite simple. I plan to rework the entire project in Python, and put it online for people to actually use (the original was never released to the public, and only I was able to use it). Look out for the new version, which will be hosted on this site, hopefully to be released later this summer.</p>
+        <iframe id="lv-video" width="560" height="315" src="http://www.youtube.com/embed/cOIbEt_LiIU?rel=0" frameborder="0" allowfullscreen></iframe>
+        <h3 id="future-subsection">Future Projects</h3>
+        <p>I've got lots of exciting ideas that I'm working on this summer. One of the biggest ones is a web app to replace the <a href="http://www.facebook.com/groups/580647781993254/" target="_blank">For Sale @ CMU</a> Facebook group, providing much more functionality and convenience for CMU students to easily buy and sell items than the current, ad hoc medium provides. I'll be starting development for this project very soon.</p>
+        <p>Another is an online strategic board game idea I've had for a while that I can't wait to begin working on. Development for that probably won't start until after the above app is more-or-less complete.</p>
+        <p>More details about these, and any other projects that I take on, will become available as development begins in earnest. I'll update this site occasionally, but if you're interested and want to keep up with the latest, I recommend you <a id="contact-link" class="jslink in-section-menu-link">connect with me</a> on other media.</p>
+      </article>
+    </section>
+    <section id="more-section">
+      <h2>Other Stuff</h2>
+      <article>
+        <img id="scrabbleboard" src="img/scrabbleboard.jpg" alt="Scrabble Board" title="One of my nicest bingos"/>
+        <h3 id="scrabble-subsection">Scrabble</h3>
+        <p>Looking for the <a href="/98-252/">98-252 course page</a>?</p> 
+        <p>I started playing Scrabble through the <a href="http://www.hasbro.com/scrabble/en_US/school.cfm" target="_blank">School Scrabble</a> program when I was 12 years old. I attended the National School Scrabble Championships in 2008 and 2009, partnering with Danilo Vicioso and Bryan Poellot and finishing 26<sup>th</sup> and <a href="http://www.scrabble-assoc.com/tourneys/2009/nssc/build/player/1/087.html" target="_blank">18<sup>th</sup></a>, respectively. After graduating from 8th grade and becoming too old to play School Scrabble, my Scrabble activity decreased due to the much harder competition in adult tournaments and my getting more involved with music and other activities. Recently, upon starting college at Carnegie Mellon, I've started playing more Scrabble again, and I attend a few tournaments as well as help direct the newly-forming <a href="http://www.facebook.com/groups/CMUScrabble/" target="_blank">Scrabble Club</a> at CMU.</p>
+        <p>In Fall 2014, I am teaching a <a href="http://www.cmu.edu/stuco/index.html" target="_blank">StuCo</a> class called "Wordplay: Fundamentals of Scrabble Strategy." The course number is <a href="/98-252/" target="_blank">98-252</a>.</p>
+        <h3 id="music-subsection">Music</h3>
+        <p>My love for and involvement in classical music has developed steadily over the years. I began playing viola in the 3<sup>rd</sup> grade with my intermediate school orchestra, and started taking private lessons with Elizabeth Kaplan in high school. Somewhere along the way I picked up a violin, and found that I enjoyed playing that as well.</p>
+        <p>I continue to practice and study viola at CMU, and I've played viola and violin in the <a href="http://alluniversityorchestra.org/" target="_blank">All-University Orchestra</a> and String Theory. My favorite, though, is to perform in small chamber ensembles and quartets - so if you're interested in playing something together, please <a id="contact-link" class="jslink in-section-menu-link">let me know</a>!</p>
+        <p>My favorite period of music is the transition between the Classical and Romantic periods, and (some of) my favorite composers are Beethoven, Mendelssohn, Schubert, Tchaikovsky, and Chopin.</p>
+        <h3 id="code-philosophy-subsection">Code Philosophy</h3>
+        <p>I hate hacking. This may sound strange coming from an avid programmer, but it's true. For me, the beauty of programming lies in its logical structure and semantic organization. I strive always for the most elegant, cleanest, fastest solution - the right way and the best way to solve the problem at hand. This isn't always easy to find; it requires careful research, lots of reading through thick documentation, and being willing to frequently refactor large chunks of code. But it leaves me with a sense of understanding and satisfaction that copy-pasting an answer from Stack Overflow just can't provide.</p>
+        <p>I also believe firmly in clear, easy-to-read, and thorough documentation. This applies to every piece of code I write, from comments in my personal .bashrc to docstrings in a python script to Git commit messages. When I first started programming, I was one of those kids who thought comments were a waste of time. I quickly grew up from that, and I take pride in devoting time and thought to writing well-documented, easy-to-maintain code.</p>
+        <p>Though I'm averse to hacky code, I'm certainly not opposed to hackathons. The excitement of charging forward with a brand-new idea and coding for hours and hours without sleep is great, even if the time constraints don't allow for the perfectly methodical programming I prefer. I've participated in HackCMU and TartanHacks at CMU, and I look forward to doing more.</p>
+        <p>My current system is <a href="http://www.linuxmint.com/" target="_blank">Linux Mint</a>, my unbleached all-purpose editor is <a href="http://www.vim.org/" target="_blank">Vim</a>. My cell phone, of course, remains the timeless and unbeatably reliable <a href="http://www.samsung.com/us/mobile/cell-phones/SCH-U680MAAVZW" target="_blank">Samsung Convoy 3</a>.
+      </article>
+    </section>
+    <section id="contact-section">
+      <img id="gatesplaque" src="img/gatesplaque.jpg" alt="Me in Gates" title="My home away from home <3"/>
+      <h2>How to get in touch</h2>
+      <article>
+        <p>I'm available for personal and professional inquiries, comments, and coversation of all sorts, so feel free to reach out. If you have a professional inquiry, you may want to check out my <a href="resume.pdf">R&eacute;sum&eacute;</a> first.</p>
+        <p>I respond to email very quickly, so it's the best way to reach me. My email address is simply my first and last names, followed by at cmu dot e dee you (pronounce it; it's for the robots). If you need to send something by snail mail, my postal address is on my <a href="resume.pdf">R&eacute;sum&eacute;</a>.</p>
+        <p>I can also be found on <a href="https://plus.google.com/+JemminChang" target="_blank">Google+</a>, <a href="http://www.facebook.com/jemmin.chang" target="_blank">Facebook</a>, and <a href="http://www.linkedin.com/pub/jemmin-chang/8a/394/805" target="_blank">LinkedIn</a>.</p>
+        <p>If you're more about code than social media, check me out on <a href="http://github.com/jchang504" target="_blank">GitHub</a> (though I don't have many public projects; you're better off checking out my <a id="projects-link" class="jslink in-section-menu-link">Projects</a> tab) or ask for my friend key on <a href="http://www.projecteuler.net" target="_blank">Project Euler</a>.</p>
+      </article>
+    </section>
+    <h6>&copy; Jemmin Chang 2014</h6>
+  </body>
+</html>
