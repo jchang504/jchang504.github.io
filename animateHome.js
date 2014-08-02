@@ -82,9 +82,9 @@ $(document).ready(function() {
   };
   // first detect local time, and set to day or night
   var d = new Date();
-  var hour = parseInt(d.toTimeString().substring(0, 3));
+  var hour = parseInt(d.toTimeString().substring(0, 2));
   var daytime = true;
-  if (20 < hour || hour < 7) { // between 8PM and 7AM
+  if (20 <= hour || hour < 7) { // between 8PM and 7AM
     switchLighting();
   }
 
