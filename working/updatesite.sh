@@ -1,6 +1,12 @@
 #!/bin/bash
 
-cd ..
+# IMPORTANT: run only from its own directory!
+
+if ! cd ../../personal_website
+then
+  echo 'Wrong directory. Run this script from within its directory.'
+  exit 1
+fi
 MAIN=$(find -maxdepth 1 -type f)
 scp $MAIN jemminc@unix.andrew.cmu.edu:www
 cd img
