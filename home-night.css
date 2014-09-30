@@ -7,11 +7,11 @@ a {
   color: greenyellow;
 }
 
-h1 a, .menu-link, .menu-sublink, #resume-menu-link {
+h1 a, .menu-link, .menu-sublink {
   color: white;
 }
 
-.menu-link:hover, .menu-sublink:hover, #resume-menu-link:hover {
+.menu-link:hover, .menu-sublink:hover {
   color: greenyellow;
 }
 
