@@ -28,9 +28,9 @@
    --><div id="nav-projects" class="menu-item with-options">
         <a id="projects-link" class="jslink menu-link">Projects</a>
         <ul class="options-list">
+          <li><a id="projects-lettercrush" class="jslink menu-sublink">Lettercrush</a></li>
           <li><a id="projects-mabimart" class="jslink menu-sublink">Mabimart</a></li>
           <li><a id="projects-victor" class="jslink menu-sublink">Victor</a></li>
-          <li><a id="projects-letterpress-victory" class="jslink menu-sublink">Letterpress Victory</a></li>
           <li><a id="projects-future" class="jslink menu-sublink">Future Projects</a></li>
         </ul>
       </div><!-- remove inline space
@@ -61,22 +61,23 @@
     <section id="projects-section">
       <h2>My Projects</h2>
       <article>
+        <h3 id="lettercrush-subsection" class="has-role"><a href="./lettercrush/" target="_blank">Lettercrush</a></h3>
+        <span class="role">Role: Project Developer</span>
+        <p>For my high school senior project, I built Letterpress Victory, a Java application with an interactive GUI that allowed the user to enter <a href="http://itunes.apple.com/us/app/letterpress-word-game/id526619424" target="_blank">Letterpress</a> games and moves, and calculated the best moves to make. As part of the project, I tested my AI against similar apps, and found that it well outperformed them (see the video for the statistics).</p>
+        <p>My knowledge of AI was much smaller at that time, and the implementation was quite simple. After a year of CS at CMU, I decided to rewrite the app from scratch: new language (JavaScript), new algorithms, and - as I soon discovered - many new challenges (mostly related to JS...). But the results far exceeded my expectations: as I coded, I realized more and more of the design flaws, inefficiencies, and downright bugs in my original Java program. By the end, everything was different, from the dictionary data structure to the game tree exploration algorithm to the GUI layout. And, though I haven't done any tests yet, I'm sure Lettercrush performs far better than Letterpress Victory did, which, as far as I know, makes it <a href="./lettercrush/" target="_blank">the best AI for Letterpress out there</a>.</p>
+        <p>Below is my Letterpress Victory presentation video from high school. The algorithms discussed here are long gone in Lettercrush, replaced by much more efficient and powerful solutions.</p>
+        <iframe id="lv-video" width="560" height="315" src="http://www.youtube.com/embed/cOIbEt_LiIU?rel=0" frameborder="0" allowfullscreen></iframe>
         <img id="sheep" src="img/sheep.png" alt="MabiMart sheep"/>
         <h3 id="mabimart-subsection" class="has-role">MabiMart — <a href="http://www.mabimart.com/" target="_blank">www.mabimart.com</a></h3>
-        <span class="role">Role: Data Acquisition Specialist</span>
+        <span class="role">Role: Data Collection</span>
         <p>MabiMart is an online auction site for trading items from the MMORPG <a href="http://mabinogi.nexon.net/" target="_blank">Mabinogi</a>, built in the summer of 2014.</p>
         <p>My role was very small compared to that of the site's owner and lead developer, my friend and classmate <a href="https://github.com/kleric" target="_blank">Clark Chen</a>. I helped Clark build the site's database by writing a webscraper to acquire and organize data on all of the game's items, enchants, reforges, etc., and prepare these data for database seeding. This turned out to be both more interesting and challenging than I had expected, and I learned a lot about webscraping in the process. The script was written in Python, and I learned and made use of the <a href="http://docs.python-requests.org/en/latest/" target="_blank">Requests</a>, <a href="http://lxml.de/" target="_blank">lxml</a>, and <a href="https://pythonhosted.org/cssselect/" target="_blank">CSSSelect</a> libraries.</p>
         <h3 id="victor-subsection" class="has-role">Victor</h3>
         <span class="role">Role: Research Assistant</span>
         <p>Victor is a <a href="https://www.google.com/#q=victor+scrabble+cmu" target="_blank">Scrabble-playing robot</a> built at Carnegie Mellon and residing on the 3rd floor of the Gates Center for Computer Science, created primarily for the purpose of studying human-robot interaction. But <strike>it's</strike> he's also fun to play with!</p>
-        <p>I worked during the Fall 2013 semester with <a href="http://www.cs.cmu.edu/~reids/" target="_blank">Dr. Reid Simmons</a>, the CMU professor who leads the project, on improving Victor's Scrabble AI. I employed my prior knowledge and experience as a competitive Scrabble player, as well as extensive research on Scrabble algorithms and AI strategies, to design, implement, and test several new strategy paradigms for Victor, and collect statistics on their relative performance. The goal was to design several levels of strategic complexity for Victor, so that he could automatically adjust his skill level to match his opponents', making him more fun and interesting to play against.</p>
-        <h3 id="letterpress-victory-subsection" class="has-role">Letterpress Victory</h3>
-        <span class="role">Role: Project Developer</span>
-        <p>Letterpress Victory was my high school senior <a href="http://somerswise.weebly.com/" target="_blank">W.I.S.E.</a> project. I built a Java application with an interactive GUI that allows the user to enter <a href="http://itunes.apple.com/us/app/letterpress-word-game/id526619424" target="_blank">Letterpress</a> games and moves, and calculates the best moves to make. As part of the project, I tested my AI against similar apps, and found that it well outperformed them (see the video for the statistics).</p>
-        <p>My knowledge of AI was much smaller at this time, and the implementation is quite simple. I plan to rework the entire project in Python, and put it online for people to actually use (the original was never released to the public, and only I was able to use it). Look out for the new version, which will be hosted on this site, hopefully to be released later this summer.</p>
-        <iframe id="lv-video" width="560" height="315" src="http://www.youtube.com/embed/cOIbEt_LiIU?rel=0" frameborder="0" allowfullscreen></iframe>
+        <p>I worked during the Fall 2013 semester with <a href="http://www.cs.cmu.edu/~reids/" target="_blank">Dr. Reid Simmons</a>, the CMU professor who leads the project, on improving Victor's Scrabble AI. I employed my prior knowledge and experience as a competitive Scrabble player, as well as extensive research on Scrabble algorithms and AI strategies, to design, implement, and test several new strategy paradigms for Victor, and collect statistics on their relative performance. The goal was to design several levels of strategic complexity for Victor, so that he could automatically adjust his skill level to match his opponent's, making him more fun and interesting to play against.</p>
         <h3 id="future-subsection">Future Projects</h3>
-        <p>I've got lots of exciting ideas that I'm working on this summer. One of the biggest ones is a web app to replace the <a href="http://www.facebook.com/groups/580647781993254/" target="_blank">For Sale @ CMU</a> Facebook group, providing much more functionality and convenience for CMU students to easily buy and sell items than the current, ad hoc medium provides. I'll be starting development for this project very soon.</p>
+        <p>I've got lots of exciting ideas that I'm working on. One of the biggest ones is a web app to replace the <a href="http://www.facebook.com/groups/580647781993254/" target="_blank">For Sale @ CMU</a> Facebook group, providing much more functionality and convenience for CMU students to easily buy and sell items than the current, ad hoc medium provides. I'll be starting development for this project very soon.</p>
         <p>Another is an online strategic board game idea I've had for a while that I can't wait to begin working on. Development for that probably won't start until after the above app is more-or-less complete.</p>
         <p>More details about these, and any other projects that I take on, will become available as development begins in earnest. I'll update this site occasionally, but if you're interested and want to keep up with the latest, I recommend you <a id="contact-link" class="jslink in-section-menu-link">connect with me</a> on other media.</p>
       </article>
