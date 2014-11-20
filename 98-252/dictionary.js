@@ -25,4 +25,6 @@ function main(data) {
       $('#result').html(word.toUpperCase() + '\n<br>\nis\n<br>\n<span class="bad">NOT good</span>');
     }
   });
+
+  $('#word').focus();
 }
