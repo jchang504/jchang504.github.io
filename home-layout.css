@@ -116,15 +116,15 @@ section {
   font-style: italic;
 }
 
+.video {
+  display: block;
+  margin: 0 auto;
+}
+
 #sheep {
   height: 200px;
   float: right;
   margin-left: 1em;
-}
-
-#lv-video {
-  display: block;
-  margin: 0 auto;
 }
 
 #scrabbleboard {
