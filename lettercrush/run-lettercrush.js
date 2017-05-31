@@ -224,7 +224,7 @@ function setGenMoves(game) {
     // reset the form for next time we look at it
     $('#gen-form')[0].reset();
     $('#gen-moves').hide();
-    if (DEBUG) { console.log('Finding best moves...'); {
+    if (DEBUG) { console.log('Finding best moves...'); }
     $('#thinking').show();
     // using this setTimeout hack again to show the Thinking panel
     var gen = function() {
