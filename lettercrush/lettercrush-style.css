@@ -1,0 +1,119 @@
+/* stylesheet for Lettercrush */
+
+.page {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* hide until JS-enabled is confirmed */
+#no-storage {
+  display: none;
+}
+
+/* hide until HTML5 Web Storage is confirmed */
+#yes-storage {
+  display: none;
+}
+
+#denied {
+  display: none;
+  color: red;
+}
+
+#loading {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: progress;
+}
+
+#games { /* The game selection page */
+  display: none;
+}
+
+.letter-board {
+  border-collapse: collapse;
+}
+
+.letter-board td {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.letter-board td.selected-tile {
+  border: 3px solid black;
+}
+
+#game-select-form {
+  float: right;
+  text-align: left;
+  overflow: auto;
+}
+
+#new-name-error {
+  display: none;
+  color: red;
+}
+
+#play {
+  display: none;
+}
+
+.play-panel {
+  display: none;
+}
+
+.return-button {
+  display: block;
+}
+
+.left-side {
+  float: left;
+  width: 50%;
+}
+
+.right-side {
+  float: right;
+  width: 50%;
+  text-align: left;
+}
+
+#thinking {
+  text-align: center;
+  cursor: progress;
+}
+
+#new-game {
+  display: none;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.white {
+  background-color: white;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+#new-board td > input {
+  border: none;
+  background-color: inherit;
+}
+
+textarea[name="played-words"] {
+  overflow: auto;
+  resize: vertical;
+}
+
+#new-incomplete {
+  display: none;
+  color: red;
+}
