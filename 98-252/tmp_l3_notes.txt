@@ -1,0 +1,109 @@
+This lecture was about tiles. The main concepts were:
+
+- Special tiles (?, S, Q, J, Z, X)
+- Tile tracking
+- Bag awareness
+- Setups
+
+1. Special tiles
+
+We discussed 2 particularly good tiles and 4 particularly problematic tiles.
+
+Blanks: there are 2 of these in the bag, and you should value them at about 25
+points each. Why are blanks worth so much? Well, by nature, they are already an
+amazing asset - like having 1 of each letter in your rack. That opens up a lot
+of possibilities. In particular, blanks make it a lot easier to get bingos,
+which are a key element of scoring well in Scrabble. Take a look at the
+examples in the slides to see two situations when it is and isn't worth using a
+blank for more points.
+
+S: there are 4 of these, and they're worth about 8-10 points each. You probably
+can guess why S's are particularly valuable - they're extremely hookable. You
+can hook them onto many nouns and verbs to hit bonus spots or find lanes to
+place bingos. Especially in combination with a blank, an S makes a rack much
+easier to bingo with. See the slides for some examples about using (or not
+using) S.
+
+NB: The value of these declines significantly the more closed the board is and
+the less bingo lanes are available. Duplicates are also not worth much: it's
+very hard to anagram with two blanks, and you only need one S to hook. But
+never exchange a blank or S: instead, use it to get some points if you don't
+need it in your rack right now, so your opponent doesn't draw it. But be
+careful: using a blank or S trivially usually signals to your opponent that you
+have another.
+
+QJZX: these are really grouped together, and the same concepts generally apply
+to all. These tiles, often referred to as the ``power tiles'', are anything
+but. They're difficult to use, and usually sit on the rack for a long time,
+blocking your chances of playing bingos. Q is the worst by far, and the slides
+show the short list of words with Q without U, and an example of when my
+opponent was stuck with the Q on their rack at the end of the game and lost 20
+points because of it. You should almost always aim to get rid of these tiles as
+soon as feasible. DON'T wait for a ``good spot'' to come along - they rarely
+do, and you're wasting turns and points waiting for one. However, this all
+depends on several other factors: the advancement of the game (later in the
+game, you should be even more focused on disposing of these tiles ASAP, as
+they're harder to place at this point and you don't want to risk getting stuck
+with them), the score (the more you're down, the quicker you want to get rid of
+them to free your rack for big opportunities (i.e. bingos)), the bag's
+composition, and the particular shape and opportunities of the board (if there
+are multiple open I's next to DLS, then holding onto Q for an extra turn or so
+isn't so bad, because you have a place to get rid of it reserved). These 4
+tiles vary in the degree of badness. If I had to rate them on a scale of 1-10
+where 10 is the worst, it would be something like Q=10, J=5, Z=3, X=1. (This
+doesn't mean X is a good tile - it's just the best among these 4.)
+
+2. Tile tracking
+
+We also talked about tile tracking. On the score sheets, there is a frequency
+chart of all the tiles in the bag on the right side. You can use this chart to
+cross off the tiles that have been played as the game goes on. This allows you
+to know the exact composition of the remaining tiles at all times, which is
+particularly helpful during the endgame (when the bag is empty), because you'll
+know your opponent's tiles exactly. For this reason, it's important to reserve
+adequate thinking time for the endgame, when you'll need a lot of time to think
+about your choices and what your opponent will play in response, and what
+you'll play in response to that, and so on. I recommend trying to having 5 full
+minutes left by the time you get to the endgame (the bag is empty).
+
+Tracking is deceptively difficult to do correctly without a lot of practice.
+One technique that I've recently begun using which helps a lot is to make a
+small mark in the corner of the box for each play after you track it. This way,
+when you inevitably forget to track a play, you'll easily be able to find which
+one you missed and correct your tracking.
+
+3. Bag awareness
+
+Besides at the endgame, having an accurate record of the tiles remaining is
+helpful for general bag awareness. How does this impact your playmaking?
+Before, we assumed that the bag always had the roughly 60:40 CV ratio whenever
+we evaluate our leaves. But this is often not the case: if we know the bag is
+actually 50:50 CV, we would want to keep more consonants, since we're more
+likely to draw vowels than usual. So our awareness of the bag informs how we
+evaluate leaves. Sometimes, estimating the CV ratio of the bag is easier to do
+by glancing at the board and estimating based on the apparent CV ratio of the
+board (more visually intuitive than looking at the lists of crossed-off letters
+on the frequency chart).
+
+Beyond just the CV ratio, pay close attention to which special tiles are left
+in the bag. For instance, knowing how many blanks are left can inform our
+estimate of the probability of playing a bingo in coming turns. If there are
+only a few tiles left in the bag and QJZX are among them, we might try to play
+fewer tiles so we don't draw a deadly rack right before the endgame. These are
+a few examples of how we can use our knowledge of the tile distribution to
+inform our play.
+
+It's also important to always be aware of how many tiles are left in the bag.
+You can't exchange once there are fewer than 7 tiles in the bag, so if you find
+yourself with a moderately bad rack close to the endgame, you should make sure
+you get an exchange in before you lose the option to.
+
+4. Setups
+
+Another way to apply our bag awareness is with setups. Besides the overall CV
+ratio, tile tracking provides us with useful information about how many of each
+particular tile is left - we especially care about the distribution of the 6
+mentioned above. When we hold the last of a particular tile, we can often use
+this to our advantage in setups. Look at the slides for a particularly common
+example: using the knowledge that we hold the last S to set ourselves up for a
+nice bonus play that our opponent can't take from us.

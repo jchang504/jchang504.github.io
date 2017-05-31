@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Get Open Sans font from Google -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="description" content="Scrabble Word-Checker (OWL2)">
+    <meta name="keywords" content="98-252,CMU,scrabble,word-checker">
+    <meta name="author" content="Jemmin Chang">
+    <title>Scrabble Word-Checker (OWL2)</title>
+    <link type="text/css" rel="stylesheet" href="dictionary-style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dictionary.js"></script>
+  </head>
+  <body>
+    <div class="centered">
+      <h1>
+        CMU 98-252
+        <br>
+        Wordplay: Fundamentals of Scrabble Strategy
+      </h1>
+      <h2>
+        Jemmin Chang
+        <br>
+        CMU Spring 2015
+      </h2>
+    </div>
+    <p>This page provides you with a simple dictionary script to check if words are legal in Scrabble. It uses the OWL2 dictionary, which is current until <strong>December 1, 2014.</strong></p>
+    <div class="centered">
+      <form id="check" action="dictionary-check.html">
+        <input id="word" type="text" maxlength="15" size="15" pattern="[A-Za-z]*" title="English letters only" required>
+        <button type="submit">Check word</button>
+      </form>
+      <h1 id="result"></h1>
+    </div>
+  </body>
+</html>

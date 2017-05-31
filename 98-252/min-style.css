@@ -1,0 +1,48 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 5px;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.centered {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+  margin-right: 1em;
+}
+
+.notice {
+  color: blue;
+}
+
+.warning {
+  color: red;
+}
+
+.no-list-marker {
+  list-style-type: none;
+}
+
+#theaders {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+#schedule-table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+#schedule-table td, #schedule-table th {
+  text-align: left;
+  padding: 2px 10px;
+}

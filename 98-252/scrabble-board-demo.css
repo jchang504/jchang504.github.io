@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+}
+
+td.hidable {
+  border: none;
+}
+
+td.col-let {
+  text-align: center;
+}
+
+td.row-num {
+  text-align: right;
+  padding-right: 7px;
+}
+
+td.reg {
+  background-color: lightgrey;
+}
+
+td.dls {
+  background-color: lightblue;
+}
+
+td.tls {
+  background-color: blue;
+}
+
+td.dws, td.start {
+  background-color: pink;
+}
+
+td.tws {
+  background-color: red;
+}
+
+td > input {
+  border: none;
+  background-color: inherit;
+  height: 37px;
+  width: 37px;
+  font-size: 37px;
+  text-align: center;
+}
+
+#tools, table {
+  float: left;
+}
+
+#tools {
+  margin: 10px;
+  width: 25%;
+}

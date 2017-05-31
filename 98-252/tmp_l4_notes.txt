@@ -1,0 +1,136 @@
+This lecture was about board control (with an extra bit about bluffing and
+challenging - see the last few slides). The main concepts were:
+
+- Open vs. closed boards
+- Controlling the board's variability
+- Board conditions for exchanging
+- First move placement
+
+1. Open vs. closed boards
+
+The overall condition of a Scrabble board can be characterized along a spectrum
+from open to closed. An open board is one where there are many spots to play,
+many playable bonus squares, and/or accessible stretches of 7 or more open
+squares suitable for placing a bingo (called bingo lanes). A closed board is
+the opposite. Generally, it's easier to score more points on an open board than
+on a closed board. This is true for both you and your opponent; consequently,
+the more open the board, the greater the variability in expected score
+difference over several turns. Why? Because, as we've all experienced, luck
+ultimately has a large influence on how many points we score. We might get
+great luck and play several bingos, or we might get all vowels and have to
+exchange for zero points. If the board is open, i.e. amenable to high-scoring
+plays, good luck will very likely yield high scores and bad luck will yield low
+scores. But if the board is closed, then even with good tiles we probably won't
+be able to score highly; there is less score variability based on drawing luck.
+Thus we say that open boards have greater score variability. Understanding,
+evaluating, and making plays to control this variability is a subtle but
+important skill for good Scrabble playing.
+
+2. Controlling the board's variability
+
+There are several reasons why you might want to use your plays to push the
+board towards one end of the spectrum of open or closed (I'll sometimes use
+these terms adverbially and call this "playing open" or "playing closed"):
+
+  1. For one, you may just prefer to play on open boards or closed boards. If
+  you are good at anagramming for bingos, you probably prefer open boards where
+  there are many lanes to place bingos. On the other hand, if you know lots of
+  short words and are great at finding compact parallel plays, you may prefer
+  closed boards where you can utilize those skills. So your personal playing
+  style may affect whether you choose to push the board towards being open or
+  closed. You should also, though, think about the opponent's playing style,
+  whether you know it in advance or you detect it by observing the way they
+  play. Forcing the opponent to play on a board which doesn't match their
+  preferred style could be to your advantage.
+
+  2. Your and your opponent's relative skill levels should influence how you
+  choose to play. The better your opponent than you, in particular the greater
+  your opponent's word knowledge than yours, the more closed you should tend to
+  play. The more opportunities available, the more your opponent's greater
+  vocabulary or skill will enable them to outplay you.
+
+  3. The current score should be the biggest factor in whether you choose to
+  play open or closed. When leading significantly (70-100 points), it often
+  makes sense to close up the board to reduce the variability. Remember that
+  more open boards permit greater variability in score: over the course of 3
+  turns, for instance, you might gain 100 points over your opponent, or
+  vice-versa. If you can instead close the board so that the greatest possible
+  spread swing is 30, then you can essentially guarantee that your opponent
+  will not surmount your lead. Similarly, when you're significantly behind, you
+  should strive to open up the board to increase the variability. While this
+  also increases your opponent's potential for scoring, it may be the only way
+  for you to have any chance of winning the game. You should always be vigilant
+  of the board's condition and, especially, what your opponent is doing to it.
+  As soon as you notice your opponent closing up the board to guarantee their
+  lead (whether it's intentional or not), you should fight with everything you
+  have to keep it open. Once the board is very closed, it's extremely hard for
+  the player who's behind to open it up, because any opening you try to make
+  your opponent will quickly shut down.  So what does opening or closing the
+  board actually entail? If you understand the definitions of open and closed,
+  this should be deducible. To open the board, strive to create hot spots and
+  bingo lanes. To close the board, get rid of the same (preferably by using
+  them). When opening the board, keep in mind that your opponent will get the
+  first shot at whatever you open up. It's best if you can create multiple
+  openings, or an opening that, if you opponent were to use it, would create
+  another opening in the process.
+
+Understand that controlling the board is not a separate task from your usual
+goal of accumulating points. Ideally, you'd like to make plays that score well,
+yield good leaves, AND push the board towards your desired conditions. It's
+another factor to think about when evaluating plays, and unlike leave values,
+it's something that requires a broader perspective - perhaps information about
+the previous few turns, and predictions about the next few, as well as the
+score - to evaluate.
+
+3. Board conditions for exchanging
+
+I want to particularly examine how this additional factor affects our exchange
+plays. Let's suppose we have a really bad rack; e.g. ACEIIRU. We definitely
+want to exchange. However, if the board has one particularly glaring opening,
+like an S on 1E with the TWS open, exchanging will mean giving this huge
+opportunity up to our opponent. Although exchanging would be our typical
+choice, with these conditions we might be forced to play something on the TWS,
+just to keep our opponent from fetching a huge score there. On the flip side,
+if the board is very closed, with few opportunities for you or your opponent to
+score well, then you should be even more willing to exchange. You know that
+your opponent won't be landing any huge plays on big openings, so there's not
+much loss in giving up a turn to improve your rack.
+
+One common position that's often a good time to exchange is the starting
+position. This may seem counterintuitive, and/or just lame to start the game by
+not playing any tiles, but it's often the best play when you start with a lousy
+rack. The starting position can be considered a pretty closed board - there's
+one DWS (the center square) and one DLS that can be reached, but you're limited
+to exactly those bonuses and no more. Once you make your play, you tend to open
+up several more hot spots for your opponent. Thus, the first move position is
+actually quite a bad one. Unless you have a play that scores pretty well and
+yields a good leave, it's usually better to exchange for a better rack and let
+your opponent deal with this troublesome position. Your opponent may very
+likely respond by exchanging and giving it back to you, but hopefully your
+exchange gives you a rack good enough to play it. If not, you know what to
+do... exchange again! Just keep in mind that 6 zero-score plays in a row ends
+the game, turning it into a "who's got lower tiles" contest, which you might
+win, but probably don't want to risk.
+
+4. First move placement
+
+Assuming you get a rack good enough to warrant playing the first tiles of the
+game, you can follow a few rules (unusual for Scrabble, but since this position
+is so standard, its analysis is as well) to decide how to place your play. You
+have to cover the center DWS square, and whether you play horizontally or
+vertically doesn't matter, since the board is rotationally symmetric. The
+important factors to consider are the positions of the surrounding bonus
+squares. Generally, you should follow this thought process:
+
+  - If you can make a 5+ letter word, place the highest-value consonant you can
+    on a DLS.
+  - Otherwise, or if there's a tie between multiple options, prefer the play
+    which places less vowels under the two DLS near the center. Between vowels,
+    prefer placing the harder to use ones under the DLS; i.e., prefer to place
+    U > O > I > A > E under the DLS, if you have to place a vowel under them.
+
+Importantly, the second consideration is subordinate to the first. If you can
+place a high-point consonant on a DLS but it requires placing vowels under the
+central DLS, do it still. The defensive effects of avoiding placing vowels
+under the DLS is enough to be a tiebreaker, but still very small. Even 2 extra
+points generally outweighs it.
