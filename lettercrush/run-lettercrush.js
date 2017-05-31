@@ -172,7 +172,7 @@ function newGame(name) {
  * REQUIRES: game is a result of Game.saveString()
  */
 function openGame(game) {
-  if (DEBUG) { console.log('Open game ' + game.name); }`
+  if (DEBUG) { console.log('Open game ' + game.name); }
   $('#games').hide(); // hide games page
   // show the loading page while game sets up move list
   $('#loading > h1').html('Loading game data...');
