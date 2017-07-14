@@ -21,7 +21,7 @@ var TURN_LIMIT = 60;
 var PAYMENT_LIMIT = 25;
 var ONE_SECOND = 1000;
 
-var PAYMENT_TEXT = "Collect payments";
+var PAYMENT_TEXT = "Tap for rent timer";
 var BACK_TEXT = "Back to turn";
 
 var BEEP_AUDIO = new Audio("beep.wav");
@@ -52,7 +52,6 @@ function setPayment(is_payment) {
 
 function togglePayment(e) {
     setPayment(!in_payment);
-    e.stopPropagation();
 }
 
 function decrement() {
@@ -88,13 +87,16 @@ function changeSettings() {
 }
 
 $(BODY).css("margin", "0").css(BACKGROUND_COLOR, BLACK).css(COLOR, WHITE)
-        .css("font-family", "Arial").css("text-align", "center");
-$(PAYMENT_BUTTON_SELECTOR).css(HEIGHT, "30vh").css(BACKGROUND_COLOR, YELLOW)
-        .css(COLOR, BLACK).css("font-size", "10vh").text(PAYMENT_TEXT);
-$(TIME_SELECTOR).css(HEIGHT, "50vh").css("font-size", "40vh").text(TURN_LIMIT);
-$(SETTINGS_SELECTOR).css(HEIGHT, "5vh").css(BACKGROUND_COLOR, GREY).click(
-        function(e) { e.stopPropagation(); }).submit(changeSettings);
+        .css("font-family", "Arial").css("text-align", "center")
+        .css("overflow", "hidden");
+$(PAYMENT_BUTTON_SELECTOR).css(HEIGHT, "25vh").css(BACKGROUND_COLOR, YELLOW)
+        .css(COLOR, BLACK).css("font-size", "7vh").css("line-height", "25vh")
+        .text(PAYMENT_TEXT);
+$(TIME_SELECTOR).css(HEIGHT, "60vh").css("font-size", "40vh").text(TURN_LIMIT);
+$(SETTINGS_SELECTOR).css(HEIGHT, "5vh").css(BACKGROUND_COLOR, GREY);
 $(INPUT_NUMBER_SELECTOR).css(WIDTH, "3em");
+
 counterInterval = setInterval(decrement, ONE_SECOND);
-$(window).click(nextTurn);
+$(TIME_SELECTOR).click(nextTurn);
 $(PAYMENT_BUTTON_SELECTOR).click(togglePayment);
+$(SETTINGS_SELECTOR).submit(changeSettings);
