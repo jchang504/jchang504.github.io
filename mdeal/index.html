@@ -1,4 +1,5 @@
-<!-- NOTE: This is copied from ~/code/random_stuff/monopoly_deal_timer -->
+<!-- NOTE: This is a copy of
+    ~/code/random_stuff/monopoly_deal_timer/monopoly_deal_timer.html -->
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -15,14 +16,12 @@
     <body>
         <div id="payment-button"></div>
         <div id="time"></div>
-        <audio id="sound" src="http://soundbible.com/grab.php?id=1815&type=wav"
-                          autostart="false" ></audio></audio>
         <form id="settings">
-            <label>Seconds for turn</label>
+            <label>Turn</label>
             <input required id="turn" type="number" min="10" value="60">
-            <label>Seconds for payment</label>
+            <label>Payment</label>
             <input required id="payment" type="number" min="5" value="25">
-            <input type="submit" value="Change settings"></input>
+            <input type="submit" value="Set limits"></input>
         </form>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
                 integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="

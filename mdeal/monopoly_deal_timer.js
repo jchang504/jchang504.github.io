@@ -1,12 +1,13 @@
 var BODY = "body";
 var PAYMENT_BUTTON_SELECTOR = "#payment-button";
 var TIME_SELECTOR = "#time";
-var SOUND_SELECTOR = "#sound";
 var SETTINGS_SELECTOR = "#settings";
 var TURN_SELECTOR = "#turn";
 var PAYMENT_SELECTOR = "#payment";
+var INPUT_NUMBER_SELECTOR = 'input[type="number"]';
 
 var HEIGHT = "height";
+var WIDTH = "width";
 var COLOR = "color";
 var BACKGROUND_COLOR = "background-color";
 var BLACK = "black";
@@ -22,6 +23,8 @@ var ONE_SECOND = 1000;
 
 var PAYMENT = "Payment";
 var ALL_PAID = "All Paid";
+
+var BEEP_AUDIO = new Audio("beep.wav");
 
 var turn_time = TURN_LIMIT;
 var payment_time = PAYMENT_LIMIT;
@@ -74,7 +77,7 @@ function nextTurn() {
     $(TIME_SELECTOR).text(turn_time.toString());
     setOvertime(false);
     setPayment(false);
-    $(SOUND_SELECTOR)[0].play();
+    BEEP_AUDIO.play();
 }
 
 function changeSettings() {
@@ -87,10 +90,11 @@ function changeSettings() {
 $(BODY).css("margin", "0").css(BACKGROUND_COLOR, BLACK).css(COLOR, WHITE)
         .css("font-family", "Arial").css("text-align", "center");
 $(PAYMENT_BUTTON_SELECTOR).css(HEIGHT, "35vh").css(BACKGROUND_COLOR, YELLOW)
-        .css(COLOR, BLACK).css("font-size", "35vh").text(PAYMENT);
+        .css(COLOR, BLACK).css("font-size", "10vh").text(PAYMENT);
 $(TIME_SELECTOR).css("font-size", "50vh").text(TURN_LIMIT);
 $(SETTINGS_SELECTOR).css(HEIGHT, "5vh").css(BACKGROUND_COLOR, GREY).click(
         function(e) { e.stopPropagation(); }).submit(changeSettings);
+$(INPUT_NUMBER_SELECTOR).css(WIDTH, "3em");
 counterInterval = setInterval(decrement, ONE_SECOND);
 $(window).click(nextTurn);
 $(PAYMENT_BUTTON_SELECTOR).click(togglePayment);
